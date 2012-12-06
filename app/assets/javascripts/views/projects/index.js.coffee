@@ -7,5 +7,12 @@ class RailsBbPortfolio.Views.ProjectsIndex extends Backbone.View
     this
   
   render: ->
-    $(@el).html(@template(projects: @collection))
+    $(@el).html(@template())
+    @collection.each(@appendProject)
+    
+    this
+
+  appendProject: (project) ->
+    view = new RailsBbPortfolio.Views.Project(model: project)
+    $('#projects').append(view.render().el)
     this

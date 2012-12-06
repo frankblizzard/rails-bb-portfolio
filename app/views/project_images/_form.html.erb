@@ -1,0 +1,19 @@
+<%= simple_form_for @project_image, :html => { :multipart => true } do |f| %>
+  <%= f.error_notification %>
+
+  <div class="inputs">
+    <%= f.input :name %>
+  </div>
+
+  <div class="inputs">
+    <%= f.input :img %>
+  </div>
+
+  <div class="actions">
+    <%= f.association :project %>
+  </div>
+
+  <div class="actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

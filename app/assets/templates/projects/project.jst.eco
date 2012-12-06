@@ -1,0 +1,4 @@
+<h2><%= @model.get('name') %></h2>
+<p class="description"><%= @model.get('description') %><p>
+<p class="date"><%= @model.get('created_at') %></p>
+<img src="<%= @model.get('project_images')[0]?.medium_image %>"></img>

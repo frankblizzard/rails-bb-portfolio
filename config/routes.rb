@@ -1,5 +1,6 @@
 RailsBbPortfolio::Application.routes.draw do
-  resources :projects
+  
+  resources :project_images
   
   scope 'api' do
     resources :projects
