@@ -4,6 +4,7 @@ RailsBbPortfolio::Application.routes.draw do
   
   scope 'api' do
     resources :projects
+    resources :people
   end
 
   # The priority is based upon order of creation:
