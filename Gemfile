@@ -27,6 +27,7 @@ end
 
 gem 'jquery-rails'
 gem 'simple_form'
+gem 'nested_form'
 gem 'backbone-on-rails'
 
 gem "paperclip", "~> 3.0"

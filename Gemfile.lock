@@ -87,6 +87,7 @@ GEM
     multi_json (1.4.0)
     multi_xml (0.5.1)
     mysql2 (0.3.11)
+    nested_form (0.3.1)
     nokogiri (1.5.5)
     paperclip (3.3.1)
       activemodel (>= 3.0.0)
@@ -157,6 +158,7 @@ DEPENDENCIES
   compass-rails
   jquery-rails
   mysql2
+  nested_form
   paperclip (~> 3.0)
   pg
   rails (= 3.2.8)

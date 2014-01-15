@@ -7,7 +7,10 @@ class ProjectsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json do 
-        render :json => @projects.to_json(:include => { :project_images => { :only => :medium_image, :methods => :medium_image } })
+        render :json => @projects.to_json(
+                  :include => { :project_images => { 
+                    :only => [ :medium_image, :full_image, :thumb_image ],
+                    :methods => [ :medium_image, :full_image, :thumb_image ] } })
       end                                      
     end
   end

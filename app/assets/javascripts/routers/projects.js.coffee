@@ -17,5 +17,8 @@ class RailsBbPortfolio.Routers.Projects extends Backbone.Router
     console.log "about!"
     
   showProject: (id) ->
-    console.log "Project #{id}"
+    project = @projects.get(id)
+    view = new RailsBbPortfolio.Views.Project(model: project)
+    $('#container').html(view.render().el)
+    console.log "Displaying Project #{id}"
     

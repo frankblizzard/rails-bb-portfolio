@@ -8,8 +8,16 @@ class ProjectImage < ActiveRecord::Base
   
   belongs_to :project
   
+  def full_image
+    img.url(:full)
+  end
+  
   def medium_image
-    img.url(:medium) || ""
+    img.url(:medium)
+  end
+  
+  def thumb_image
+    img.url(:thumb)
   end
   
 end
